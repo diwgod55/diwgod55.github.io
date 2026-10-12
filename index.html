@@ -3,77 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Alejandro Torres Salas - Portafolio</title>
+    <title>Diego Alejandro Torres Salas</title>
     <style>
         body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0b0f12;
+            color: #94a3b8;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
             margin: 0;
-            padding: 20px;
+            padding: 30px;
             display: flex;
             justify-content: center;
         }
         .container {
             width: 100%;
-            max-width: 800px;
+            max-width: 750px;
         }
-        .card-header {
-            background-color: #0d1117;
-            border: 1px solid #30363d;
-            padding: 25px;
-            border-radius: 12px;
+        .header {
+            padding: 10px 0 25px 0;
+            border-bottom: 1px solid #1e293b;
         }
         h1 {
-            margin: 0 0 10px 0;
-            color: #ffffff;
-            font-size: 28px;
+            margin: 0 0 6px 0;
+            color: #f8fafc;
+            font-size: 24px;
+            font-weight: 500;
         }
         h3 {
-            color: #c9d1d9;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 6px;
-            margin-top: 30px;
+            color: #cbd5e1;
+            font-size: 16px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 500;
         }
         p, li {
-            color: #8b949e;
-            line-height: 1.6;
+            color: #94a3b8;
+            line-height: 1.7;
+            font-size: 14px;
         }
-        .btn {
-            text-decoration: none;
-            padding: 8px 14px;
-            border-radius: 6px;
+        .links {
+            margin-top: 15px;
             font-size: 13px;
-            font-family: monospace;
-            font-weight: bold;
-            display: inline-block;
-            margin-right: 8px;
         }
-        .btn-green {
-            background-color: #238636;
-            color: white;
+        .links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-right: 20px;
+            border-bottom: 1px dotted #475569;
+            padding-bottom: 2px;
         }
-        .btn-dark {
-            background-color: #21262d;
-            border: 1px solid #30363d;
-            color: #c9d1d9;
+        .links a:hover {
+            color: #f8fafc;
+            border-bottom-color: #f8fafc;
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .tech-tag {
+            background-color: #111827;
+            border: 1px solid #1f2937;
+            color: #9ca3af;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
         }
         .project-card {
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 15px;
+            background-color: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 6px;
+            padding: 18px;
             margin-bottom: 15px;
         }
         .project-title {
-            color: #58a6ff;
-            margin: 0 0 8px 0;
-            font-size: 18px;
+            color: #e2e8f0;
+            margin: 0 0 6px 0;
+            font-size: 15px;
+            font-weight: 500;
         }
         code {
-            background-color: rgba(110,118,129,0.4);
-            padding: 2px 4px;
-            border-radius: 4px;
+            color: #64748b;
             font-size: 12px;
         }
     </style>
@@ -83,87 +95,80 @@
 <div class="container">
 
     <!-- Cabecera -->
-    <div class="card-header">
+    <div class="header">
         <h1>Diego Alejandro Torres Salas</h1>
-        <p style="font-size: 16px; margin: 6px 0 16px 0;">Estudiante de Ingeniería en Sistemas de Información</p>
-        <p style="margin: 0 0 16px 0; font-size: 14px;">Hermosillo, Sonora, México</p>
-        <div>
-            <a href="mailto:diwgodtorres55@gmail.com" class="btn btn-green">diwgodtorres55@gmail.com</a>
-            <a href="https://github.com/diwgod55" target="_blank" class="btn btn-dark">GitHub: diwgod55</a>
+        <p style="margin: 0; color: #64748b; font-size: 13px;">Estudiante de Ingeniería en Sistemas de Información · Hermosillo, Sonora</p>
+        <div class="links">
+            <a href="mailto:diwgodtorres55@gmail.com">diwgodtorres55@gmail.com</a>
+            <a href="https://github.com/diwgod55" target="_blank">github/diwgod55</a>
         </div>
     </div>
 
     <!-- Sobre mí -->
-    <h3>Sobre mí</h3>
+    <h3>sobre mí</h3>
     <p>
-        Soy un estudiante de Ingeniería en Sistemas de Información con gran interés en el desarrollo de sistemas robustos, la administración de servidores y la seguridad informática. Me encanta automatizar procesos, configurar entornos en Linux y explorar soluciones orientadas a datos.
+        Estudiante de Ingeniería en Sistemas de Información con interés en sistemas robustos, infraestructura de servidores y seguridad informática. Me gusta automatizar procesos, configurar entornos en Linux y explorar soluciones orientadas a datos.
     </p>
 
     <!-- Áreas de Interés -->
-    <h3>Áreas de Interés</h3>
-    <ul>
-        <li><b>Big Data & Análisis de Datos:</b> Procesamiento, almacenamiento y manejo masivo de información.</li>
-        <li><b>Administración de Servidores & Infraestructura:</b> Configuración, optimización y mantenimiento de servidores Linux.</li>
-        <li><b>Ciberseguridad:</b> Protección de sistemas, gestión de accesos, políticas de seguridad y análisis de vulnerabilidades.</li>
-        <li><b>Virtualización y Contenedores:</b> Automatización e aislamiento de servicios.</li>
+    <h3>áreas de interés</h3>
+    <ul style="padding-left: 18px;">
+        <li><b>Big Data & Datos:</b> Procesamiento y manejo de grandes volúmenes de información.</li>
+        <li><b>Servidores & Infraestructura:</b> Configuración y optimización en entornos Linux.</li>
+        <li><b>Ciberseguridad:</b> Protección de sistemas y gestión de accesos.</li>
+        <li><b>Virtualización:</b> Contenedores y aislamiento de servicios.</li>
     </ul>
 
-    <!-- Tecnologías y Habilidades -->
-    <h3>Tecnologías y Habilidades</h3>
-    <p>
-        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Pruebas_JSwing-007396?style=flat-square&logo=java&logoColor=white" />
-        <img src="https://img.shields.io/badge/Ubuntu_Server-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
-        <img src="https://img.shields.io/badge/Linux_CLI-FCC624?style=flat-square&logo=linux&logoColor=black" />
-        <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-        <img src="https://img.shields.io/badge/SQL_Server-CC292B?style=flat-square&logo=microsoft-sql-server&logoColor=white" />
-    </p>
-
-    <!-- Proyectos de GitHub -->
-    <h3>Proyectos de GitHub</h3>
-    <p>Puedes explorar mis repositorios y prácticas de código directamente en mi perfil oficial:</p>
-    <p>
-        <a href="https://github.com/diwgod55?tab=repositories" target="_blank" class="btn btn-dark" style="color: #58a6ff;">Ver Repositorios en GitHub (diwgod55)</a>
-    </p>
+    <!-- Tecnologías -->
+    <h3>habilidades y tecnologías</h3>
+    <ul class="tech-list">
+        <li class="tech-tag">Java</li>
+        <li class="tech-tag">Python</li>
+        <li class="tech-tag">Pruebas JSwing</li>
+        <li class="tech-tag">Ubuntu Server</li>
+        <li class="tech-tag">Linux CLI</li>
+        <li class="tech-tag">MySQL</li>
+        <li class="tech-tag">PostgreSQL</li>
+        <li class="tech-tag">SQL Server</li>
+    </ul>
 
     <!-- Proyectos Académicos -->
-    <h3>Proyectos Académicos y Prácticas</h3>
+    <h3>proyectos académicos y prácticas</h3>
 
     <div class="project-card">
-        <h4 class="project-title">Estudio de Sitio WLAN en Starbucks Navarrete</h4>
-        <p style="font-size: 13px; margin: 0 0 8px 0;"><i>Comunicación de Datos II</i> | <code>WLAN</code> <code>inSSIDer</code> <code>Análisis de cobertura</code></p>
+        <div class="project-title">Estudio de Sitio WLAN en Starbucks Navarrete</div>
+        <p style="font-size: 12px; margin: 0 0 8px 0; color: #64748b;">Comunicación de Datos II / inSSIDer</p>
         <p style="margin: 0;">
-            Estudio de sitio WLAN en Starbucks Distrito Hexus DT en Hermosillo combinando redes inalámbricas y mapeo de cobertura (1.er piso, 2.do piso y exterior). Con <b>inSSIDer</b> analizamos intensidad de señal, canales y bandas (2.4 y 5 GHz), identificando saturación en canal 6 y zonas críticas, proponiendo optimización Mesh/Roaming y uso de 5 GHz.
+            Estudio de redes inalámbricas y mapeo de cobertura en múltiples niveles. Análisis de intensidad de señal, saturación en canales de 2.4 y 5 GHz, y propuestas de optimización con arquitecturas Mesh/Roaming.
         </p>
     </div>
 
     <div class="project-card">
-        <h4 class="project-title">Administración de Bases de Datos</h4>
-        <p style="font-size: 13px; margin: 0 0 8px 0;"><code>SQL</code> <code>MySQL</code> <code>PostgreSQL</code> <code>SQL Server</code></p>
+        <div class="project-title">Administración de Bases de Datos</div>
+        <p style="font-size: 12px; margin: 0 0 8px 0; color: #64748b;">SQL / MySQL / PostgreSQL / SQL Server</p>
         <p style="margin: 0;">
-            Diseño y mantenimiento de bases de datos relacionales. Aplicación de consultas complejas, control de accesos mediante usuarios, roles y permisos, gestión de transacciones, concurrencia y planes de respaldo y restauración para garantizar integridad de la información.
+            Diseño relacional, consultas avanzadas, control de accesos mediante roles y permisos, transacciones, concurrencia y estrategias de respaldo y recuperación de datos.
         </p>
     </div>
 
     <div class="project-card">
-        <h4 class="project-title">Simulación de Redes con Cisco Packet Tracer</h4>
-        <p style="font-size: 13px; margin: 0 0 8px 0;"><code>Cisco Packet Tracer</code> <code>Topologías</code> <code>Redes</code></p>
+        <div class="project-title">Simulación de Redes</div>
+        <p style="font-size: 12px; margin: 0 0 8px 0; color: #64748b;">Cisco Packet Tracer</p>
         <p style="margin: 0;">
-            Representación de topologías de red complejas, configuración de direccionamiento IP en equipos de red y pruebas de conectividad para diagnosticar y solucionar problemas de comunicación de forma estructurada.
+            Modelado de topologías de red, configuración de direccionamiento y pruebas de conectividad para el diagnóstico estructurado de fallas de comunicación.
         </p>
     </div>
 
     <div class="project-card">
-        <h4 class="project-title">Configuración de Entornos Linux y Servidores</h4>
-        <p style="font-size: 13px; margin: 0 0 8px 0;"><code>Ubuntu Server</code> <code>Docker</code> <code>VirtualBox</code></p>
+        <div class="project-title">Entornos Linux y Servidores</div>
+        <p style="font-size: 12px; margin: 0 0 8px 0; color: #64748b;">Ubuntu Server / Docker / VirtualBox</p>
         <p style="margin: 0;">
-            Instalación y administración de Ubuntu Server en entornos virtualizados, gestión de acceso remoto seguro vía SSH, automatización de procesos y despliegue de servicios aislados con contenedores.
+            Despliegue y administración remota de servidores virtualizados vía SSH, automatización de tareas y gestión de contenedores.
         </p>
     </div>
 
 </div>
 
 </body>
+</html>
 </html>
